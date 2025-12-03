@@ -1,5 +1,6 @@
 import requests
 import streamlit as st
+import json
 
 API_BASE_URL = "http://127.0.0.1:8000"
 
@@ -85,13 +86,12 @@ Analyze a GitHub issue using an AI agent.
         st.write(data.get("potential_impact", ""))
 
         st.markdown("### 📦 Raw JSON")
-        import json
         st.code(json.dumps(data, indent=4), language="json")
 
 
         # Extra: copyable JSON
         st.markdown("### 📋 Copyable JSON")
-        st.code(data, language="json")
+        st.code(json.dumps(data), language="json")
 
 
 if __name__ == "__main__":
