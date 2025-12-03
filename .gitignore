@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# Environments
+.venv/
+env/
+venv/
+
+# VSCode
+.vscode/
+
+# Streamlit
+.streamlit/
+
+# Secrets
+.env
