@@ -14,7 +14,7 @@ This project is built as part of the Seedling Labs Engineering Intern Craft Case
   - GitHub issue number
 - Backend (FastAPI):
   - Fetches issue title, body, and comments via GitHub REST API
-  - Uses an LLM (OpenAI) to:
+  - Uses an LLM (Google Gemini via `google-generativeai`) to:
     - Summarize the issue
     - Classify type (bug, feature_request, documentation, question, other)
     - Assign a priority score (1–5) with justification
